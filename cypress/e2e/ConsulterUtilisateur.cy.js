@@ -13,4 +13,3 @@ describe('T044 Visualisation Fonctionne', () => {
     })
   })
 
-  // Todo : T043
