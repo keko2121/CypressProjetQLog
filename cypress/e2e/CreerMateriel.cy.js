@@ -6,7 +6,7 @@ describe('The Home Page', () => {
   })
 })
 
-/*
+
 describe('T001 Nom trop grand', () => {
   it('s', () => {
     cy.visit('/')
@@ -16,7 +16,7 @@ describe('T001 Nom trop grand', () => {
     cy.get('#password').type('admin123') // entre le mot de passe admin
     cy.get('.control > .button').click() // click sur le bouton connexion
     cy.wait(2000) // attendre 2 seconde
-    cy.get('.navbar-start > :nth-child(3) > a').click() // click sur materiel
+    cy.get('.navbar-start > :nth-child(2) > a').click() // click sur materiel
     // remplir les champs du formulaire creation materiel
     cy.get(':nth-child(1) > .control > .input').type('nameCypress1fdsfdsfdsfdqfdsqfdsqfdsqfdsqfdsqfdsqfdsqfdqsfdqs') 
     cy.get(':nth-child(2) > .control > .input').type('typeCypress') 
@@ -39,7 +39,7 @@ describe('T002 Nom manquant', () => {
     cy.get('#password').type('admin123') // entre le mot de passe admin
     cy.get('.control > .button').click() // click sur le bouton connexion
     cy.wait(2000) // attendre 2 seconde
-    cy.get('.navbar-start > :nth-child(3) > a').click() // click sur materiel
+    cy.get('.navbar-start > :nth-child(2) > a').click() // click sur materiel
     // remplir les champs du formulaire creation materiel
     cy.get(':nth-child(1) > .control > .input').clear() // met le nom à vide 
     cy.get(':nth-child(2) > .control > .input').type('typeCypress') 
@@ -63,7 +63,7 @@ describe('T003 Version trop grande', () => {
     cy.get('#password').type('admin123') // entre le mot de passe admin
     cy.get('.control > .button').click() // click sur le bouton connexion
     cy.wait(2000) // attendre 2 seconde
-    cy.get('.navbar-start > :nth-child(3) > a').click() // click sur materiel
+    cy.get('.navbar-start > :nth-child(2) > a').click() // click sur materiel
     // remplir les champs du formulaire creation materiel
     cy.get(':nth-child(1) > .control > .input').type('nameCypress1') 
     cy.get(':nth-child(2) > .control > .input').type('typeCypress') 
@@ -86,7 +86,7 @@ describe('T004 Version trop petite', () => {
     cy.get('#password').type('admin123') // entre le mot de passe admin
     cy.get('.control > .button').click() // click sur le bouton connexion
     cy.wait(2000) // attendre 2 seconde
-    cy.get('.navbar-start > :nth-child(3) > a').click() // click sur materiel
+    cy.get('.navbar-start > :nth-child(2) > a').click() // click sur materiel
     // remplir les champs du formulaire creation materiel
     cy.get(':nth-child(1) > .control > .input').type('nameCypress1') 
     cy.get(':nth-child(2) > .control > .input').type('typeCypress') 
@@ -109,7 +109,7 @@ describe('T005 Version manquante', () => {
     cy.get('#password').type('admin123') // entre le mot de passe admin
     cy.get('.control > .button').click() // click sur le bouton connexion
     cy.wait(2000) // attendre 2 seconde
-    cy.get('.navbar-start > :nth-child(3) > a').click() // click sur materiel
+    cy.get('.navbar-start > :nth-child(2) > a').click() // click sur materiel
     // remplir les champs du formulaire creation materiel
     cy.get(':nth-child(1) > .control > .input').type('nameCypress1') 
     cy.get(':nth-child(2) > .control > .input').type('typeCypress') 
@@ -132,7 +132,7 @@ describe('T006 Référence taille différents', () => {
     cy.get('#password').type('admin123') // entre le mot de passe admin
     cy.get('.control > .button').click() // click sur le bouton connexion
     cy.wait(2000) // attendre 2 seconde
-    cy.get('.navbar-start > :nth-child(3) > a').click() // click sur materiel
+    cy.get('.navbar-start > :nth-child(2) > a').click() // click sur materiel
     // remplir les champs du formulaire creation materiel
     cy.get(':nth-child(1) > .control > .input').type('nameCypress1') 
     cy.get(':nth-child(2) > .control > .input').type('typeCypress') 
@@ -155,7 +155,7 @@ describe('T007 Reference incoherent', () => {
     cy.get('#password').type('admin123') // entre le mot de passe admin
     cy.get('.control > .button').click() // click sur le bouton connexion
     cy.wait(2000) // attendre 2 seconde
-    cy.get('.navbar-start > :nth-child(3) > a').click() // click sur materiel
+    cy.get('.navbar-start > :nth-child(2) > a').click() // click sur materiel
     // remplir les champs du formulaire creation materiel
     cy.get(':nth-child(1) > .control > .input').type('nameCypress1') 
     cy.get(':nth-child(2) > .control > .input').type('typeCypress') 
@@ -179,7 +179,7 @@ describe('T008 Reference manquante', () => {
     cy.get('#password').type('admin123') // entre le mot de passe admin
     cy.get('.control > .button').click() // click sur le bouton connexion
     cy.wait(2000) // attendre 2 seconde
-    cy.get('.navbar-start > :nth-child(3) > a').click() // click sur materiel
+    cy.get('.navbar-start > :nth-child(2) > a').click() // click sur materiel
     // remplir les champs du formulaire creation materiel
     cy.get(':nth-child(1) > .control > .input').type('nameCypress1') 
     cy.get(':nth-child(2) > .control > .input').type('typeCypress') 
@@ -202,7 +202,7 @@ describe('T009 Numéro trop grand', () => {
     cy.get('#password').type('admin123') // entre le mot de passe admin
     cy.get('.control > .button').click() // click sur le bouton connexion
     cy.wait(2000) // attendre 2 seconde
-    cy.get('.navbar-start > :nth-child(3) > a').click() // click sur materiel
+    cy.get('.navbar-start > :nth-child(2) > a').click() // click sur materiel
     // remplir les champs du formulaire creation materiel
     cy.get(':nth-child(1) > .control > .input').type('nameCypress1') 
     cy.get(':nth-child(2) > .control > .input').type('typeCypress') 
@@ -225,7 +225,7 @@ describe('T010 Numéro incohérent', () => {
     cy.get('#password').type('admin123') // entre le mot de passe admin
     cy.get('.control > .button').click() // click sur le bouton connexion
     cy.wait(2000) // attendre 2 seconde
-    cy.get('.navbar-start > :nth-child(3) > a').click() // click sur materiel
+    cy.get('.navbar-start > :nth-child(2) > a').click() // click sur materiel
     // remplir les champs du formulaire creation materiel
     cy.get(':nth-child(1) > .control > .input').type('nameCypress1') 
     cy.get(':nth-child(2) > .control > .input').type('typeCypress') 
@@ -248,7 +248,7 @@ describe('T011 Numéro manquant', () => {
     cy.get('#password').type('admin123') // entre le mot de passe admin
     cy.get('.control > .button').click() // click sur le bouton connexion
     cy.wait(2000) // attendre 2 seconde
-    cy.get('.navbar-start > :nth-child(3) > a').click() // click sur materiel
+    cy.get('.navbar-start > :nth-child(2) > a').click() // click sur materiel
     // remplir les champs du formulaire creation materiel
     cy.get(':nth-child(1) > .control > .input').type('nameCypress1') 
     cy.get(':nth-child(2) > .control > .input').type('typeCypress') 
@@ -271,7 +271,7 @@ describe('T012 image format incohérent', () => {
     cy.get('#password').type('admin123') // entre le mot de passe admin
     cy.get('.control > .button').click() // click sur le bouton connexion
     cy.wait(2000) // attendre 2 seconde
-    cy.get('.navbar-start > :nth-child(3) > a').click() // click sur materiel
+    cy.get('.navbar-start > :nth-child(2) > a').click() // click sur materiel
     // remplir les champs du formulaire creation materiel
     cy.get(':nth-child(1) > .control > .input').type('nameCypress1') 
     cy.get(':nth-child(2) > .control > .input').type('typeCypress') 
@@ -284,7 +284,7 @@ describe('T012 image format incohérent', () => {
     cy.wait(3000)
   })
 })
-*/
+
 
 describe('T015 Matériel crée', () => {
   it('s', () => {
@@ -295,9 +295,9 @@ describe('T015 Matériel crée', () => {
     cy.get('#password').type('admin123') // entre le mot de passe admin
     cy.get('.control > .button').click() // click sur le bouton connexion
     cy.wait(2000) // attendre 2 seconde
-    cy.get('.navbar-start > :nth-child(3) > a').click() // click sur materiel
+    cy.get('.navbar-start > :nth-child(2) > a').click() // click sur materiel
     // remplir les champs du formulaire creation materiel
-    cy.get(':nth-child(1) > .control > .input').type('nameCypress1') 
+    cy.get(':nth-child(1) > .control > .input').type('nameCypress') 
     cy.get(':nth-child(2) > .control > .input').type('typeCypress') 
     cy.get(':nth-child(3) > .control > .input').type('versionCypress') 
     cy.get(':nth-child(4) > .control > .input').type('AN185')
